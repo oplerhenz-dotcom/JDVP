@@ -60,7 +60,7 @@ $result = $conn->query($sql);
             </div>
        
              <div class="btn">
-              <button class="buy-now
+              <button class="buy-now"
               onclick="openBuyNow(
                 <?php echo $product['product_id']; ?>,
                 '<?php echo addslashes($product['product_name']); ?>',
@@ -75,7 +75,7 @@ $result = $conn->query($sql);
             <button class="add-cart"
             onclick="addToCard(
             <?php echo (int)$product['product_id']; ?>,
-            <?php echo htmlspeccialchars(json_encode($product['product_name'], ENT_QUOTES, 'UTF-8'); ?>,
+            <?php echo htmlspecialchars(json_encode($product['product_name']), ENT_QUOTES, 'UTF-8'); ?>,
             <?php echo (float)$product['price']; ?>
             )">
           Add to cart</button>
