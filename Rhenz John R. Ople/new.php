@@ -60,8 +60,25 @@ $result = $conn->query($sql);
             </div>
        
              <div class="btn">
-              <button class="btn-primary">Buy Now</button>
-            <button class="btn-secondary">Add to cart</button>
+              <button class="buy-now
+              onclick="openBuyNow(
+                <?php echo $product['product_id']; ?>,
+                '<?php echo addslashes($product['product_name']); ?>',
+                <?php echo $product['price']; ?>,
+                <?php echo $product['stocks']; ?>,
+                '<?php echo $product['image']; ?>''
+              )">
+              Buy Now
+              </button>
+              
+              
+            <button class="add-cart"
+            onclick="addToCard(
+            <?php echo (int)$product['product_id']; ?>,
+            <?php echo htmlspeccialchars(json_encode($product['product_name'], ENT_QUOTES, 'UTF-8'); ?>,
+            <?php echo (float)$product['price']; ?>
+            )">
+          Add to cart</button>
                   </div>
 
         </div>
