@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:rgb(15, 15, 15);
+}
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+.container-navbar{
+    display:flex;
+    text-align:center;
+    justify-content: space-between;
+    padding:20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.nav-menu{
+ display:flex;
+    align-items: center;
+    gap:50px;
+}
+.nav-menu a{
+    text-decoration:none;
+    color:white;
+}
+.nav-menu .nav-btn{
+    font-size:25px;
+}
+.Logo{
+    text-decoration:none;
+    font-size:20px;
+    margin:50px;
+    color:white;
+}
+.Logo span{
+    color:rgb(12, 12, 12);
+    padding:15px;
+    border-radius:10px;
+    background-color:rgb(255, 174, 0);
+}
+.nav-menu a:hover{
+    color:rgb(255, 174, 0);
+    transition:1.6s;
+}
+
+.grid-card{
+    
+   display:grid;
+   grid-template-columns:repeat(3, 1fr);
+   width:100%;
+   text-align:center;
+   margin:30px;
+   gap:20px;
+  
+}
+.card{
+    
+    background-color:rgb(254, 254, 254);
+   border-radius:20px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align:center;
+   padding-bottom:20px;
+   
+}
+.Image img{
+    height:200px;
+    width:100%;
+    border-radius:20px;
+    padding:10px;
+}
+
+
+
+
+
